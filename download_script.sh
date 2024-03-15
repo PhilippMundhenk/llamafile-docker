@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # File name
-FILE_NAME="llamafile-server-0.1-llava-v1.5-7b-q4"
+FILE_NAME="llava-v1.5-7b-f16.gguf"
 
 # Check if the file already exists
 if [ ! -f "/data/$FILE_NAME" ]; then
 	    # Download the file
-	        wget -O "/data/$FILE_NAME" https://huggingface.co/jartine/llava-v1.5-7B-GGUF/resolve/main/llamafile-server-0.1-llava-v1.5-7b-q4
+	        wget -O "/data/$FILE_NAME" https://huggingface.co/jartine/llava-v1.5-7B-GGUF/resolve/main/llava-v1.5-7b-f16.gguf
 fi
 
 # Make the binary executable
